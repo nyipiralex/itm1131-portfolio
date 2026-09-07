@@ -20,7 +20,7 @@
     <p>
         <b>Links:</b><br>
         <!-- link 1 --><a href="#table">jump to table</a><br> <!-- link 2 --><a href="index.html">back to home</a>
-         <h3>Profile Pictures</h3><br><p><img src="clipart2318072.png" alt="Profile Picture 1"width=200px></img><!-- profile picture 1 --><br> <!-- profile picture 2 -->
+         <h3>Profile Pictures</h3><br><p><img src="clipart2318072.png" alt="Profile Picture 1" width="200"><!-- profile picture 1 --><br> <!-- profile picture 2 -->
     </p>
     <hr>
     <h3 id="table">MY 3 FAVORITE COURSE MODULES IN IT</h3>
@@ -43,6 +43,19 @@
         </tr>
     </table>
     <hr>
-    <p><Footer>© 2026 MyProfile. All rights reserved.</Footer></p>
+    <form action="submit_form.php" method="post">
+        <h3>Contact Me</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <footer>© 2026 MyProfile. All rights reserved.</footer>
 </body>
 </html>

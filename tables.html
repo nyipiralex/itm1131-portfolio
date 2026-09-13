@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>LOGO | MyProfile</h1>
     <P>Home | About | Profile | Contact</P>
     <hr>
     <h2>MY PROFILE</h2>
-    <h3>About Me</h3>
+  <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><section class="card">
+        <h2>Welcome to My Profile Website</h2>
+        <p>This is a simple profile website created using HTML and CSS. You can navigate through the different sections using the navigation bar above.</p>
+        </section>
+        <h2>My Projects</h2>
+        <section class="gallery">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+    <div class="card">  <h3>About Me</h3>
     <ul>
         <li><b>Name:</b>Nyipir Alex</li>
         <li><b>Role:</b>IT Student</li>
@@ -18,12 +47,12 @@
         <li><b>Location:</b>Arua, Uganda</li>
     </ul>
     <p>
-        <b>Links:</b><br>
+       <b>Links:</b><br>
         <!-- link 1 --><a href="#table">jump to table</a><br> <!-- link 2 --><a href="index.html">back to home</a>
          <h3>Profile Pictures</h3><br><p><img src="clipart2318072.png" alt="Profile Picture 1" width="200"><!-- profile picture 1 --><br> <!-- profile picture 2 -->
-    </p>
+    </p></div>
     <hr>
-    <h3 id="table">MY 3 FAVORITE COURSE MODULES IN IT</h3>
+   <div class="card"> <h3 id="table">MY 3 FAVORITE COURSE MODULES IN IT</h3>
     <table border="1">
         <tr>
             <th>Course Module</th>
@@ -41,9 +70,9 @@
             <td>Software Engineering</td>
             <td>Explore the principles and practices of software development.</td>
         </tr>
-    </table>
+    </table></div>
     <hr>
-    <form action="submit_form.php" method="post">
+   <div class="card"> <form action="submit_form.php" method="post">
         <h3>Contact Me</h3>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
@@ -55,7 +84,7 @@
         <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea><br><br>
         
         <input type="submit" value="Submit">
-    </form>
+    </form></div>
     <footer>© 2026 MyProfile. All rights reserved.</footer>
 </body>
 </html>

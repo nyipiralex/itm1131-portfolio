@@ -4,87 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="INDEX.CSS">
 </head>
 <body>
-    <h1>LOGO | MyProfile</h1>
-    <P>Home | About | Profile | Contact</P>
-    <hr>
-    <h2>MY PROFILE</h2>
-  <nav class="navbar">
-        <div class="logo">LOGO</div>
-        <ul class="nav-links">
+    <nav class="navbar">
+        <div class="logo">LOGO | MyProfile</div>
+        <!-- ADDED ID FOR JS -->
+        <button id="menu-btn">Menu</button>
+        <ul class="nav-links" id="nav-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="profile.html">Profile</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav><section class="card">
+    </nav>
+
+    <section class="card">
         <h2>Welcome to My Profile Website</h2>
-        <p>This is a simple profile website created using HTML and CSS. You can navigate through the different sections using the navigation bar above.</p>
-        </section>
-        <h2>My Projects</h2>
-        <section class="gallery">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <div class="project-card">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
-    <div class="card">  <h3>About Me</h3>
-    <ul>
-        <li><b>Name:</b>Nyipir Alex</li>
-        <li><b>Role:</b>IT Student</li>
-        <li><b>Bio:</b> I am a passionate IT student with a strong interest in web development and programming.</li>
-        <li><b>Location:</b>Arua, Uganda</li>
-    </ul>
-    <p>
-       <b>Links:</b><br>
-        <!-- link 1 --><a href="#table">jump to table</a><br> <!-- link 2 --><a href="index.html">back to home</a>
-         <h3>Profile Pictures</h3><br><p><img src="clipart2318072.png" alt="Profile Picture 1" width="200"><!-- profile picture 1 --><br> <!-- profile picture 2 -->
-    </p></div>
+        <p>This is a simple profile website created using HTML and CSS.</p>
+    </section>
+
+    <h2>My Projects</h2>
+    <section class="gallery">
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive site showcasing my skills,bio, and project links.</p>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Arua Online Shopping Platform</h3>
+            <p>An online shopping platform making shopping easy in Arua.</p>
+        </div>
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>AruaBooking.com</h3>
+            <p>A travel booking platform for users in Arua.</p>
+        </div>
+    </section>
+
+    <div class="card">  
+        <h3>About Me</h3>
+        <ul>
+            <li><b>Name:</b> Nyipir Alex</li>
+            <li><b>Role:</b> IT Student</li>
+            <li><b>Bio:</b> I am a passionate IT student with a strong interest in web development.</li>
+            <li><b>Location:</b> Arua, Uganda</li>
+        </ul>
+        <p>
+            <b>Links:</b><br>
+            <a href="#table">jump to table</a><br> 
+            <a href="index.html">back to home</a>
+        </p>
+        <h3>Profile Pictures</h3>
+        <p><img src="clipart2318072.png" alt="Profile Picture 1" width="100"></p>
+    </div>
     <hr>
-   <div class="card"> <h3 id="table">MY 3 FAVORITE COURSE MODULES IN IT</h3>
-    <table border="1">
-        <tr>
-            <th>Course Module</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Web Development</td>
-            <td>Learn to build dynamic websites using HTML, CSS, and JavaScript.</td>
-        </tr>
-        <tr>
-            <td>Database Management</td>
-            <td>Understand how to design, implement, and manage databases.</td>
-        </tr>
-        <tr>
-            <td>Software Engineering</td>
-            <td>Explore the principles and practices of software development.</td>
-        </tr>
-    </table></div>
+
+    <div class="card"> 
+        <h3 id="table">MY 3 FAVORITE COURSE MODULES IN IT</h3>
+        <table border="1">
+            <tr><th>Course Module</th><th>Description</th></tr>
+            <tr><td>Web Development</td><td>Learn to build dynamic websites using HTML, CSS, and JavaScript.</td></tr>
+            <tr><td>Database Management</td><td>Understand how to design, implement, and manage databases.</td></tr>
+            <tr><td>Software Engineering</td><td>Explore the principles and practices of software development.</td></tr>
+        </table>
+    </div>
     <hr>
-   <div class="card"> <form action="submit_form.php" method="post">
-        <h3>Contact Me</h3>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea><br><br>
-        
-        <input type="submit" value="Submit">
-    </form></div>
+
+    <div class="card"> 
+        <form id="contact-form">
+            <h3>Contact Me</h3>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required placeholder="Enter your message" maxlength="200"></textarea><br>
+            <!-- LIVE COUNTER -->
+            <small id="char-count">0 / 200 characters</small><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
     <footer>© 2026 MyProfile. All rights reserved.</footer>
+
+    <!-- LESSON 12 JAVASCRIPT - THIS IS THE ASSIGNMENT -->
+    <script>
+        // Feature 1: Mobile Menu Toggle - Requirement 1
+        const btn = document.querySelector("#menu-btn");
+        const menu = document.querySelector("#nav-menu");
+
+        if (btn && menu) {
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("open");
+                btn.textContent = menu.classList.contains("open") ? "Close" : "Menu";
+            });
+        }
+
+        // Feature 2: Live Character Count - Requirement 2
+        const messageField = document.querySelector("#message");
+        const charCount = document.querySelector("#char-count");
+
+        if (messageField && charCount) {
+            messageField.addEventListener("input", () => {
+                const currentLength = messageField.value.length;
+                const maxLength = 200;
+                charCount.textContent = `${currentLength} / ${maxLength} characters`;
+                
+                // Optional: change color when close to limit
+                if (currentLength > 180) {
+                    charCount.style.color = "red";
+                } else {
+                    charCount.style.color = "black";
+                }
+            });
+        }
+
+        // Prevent form reload (Best Practice from handout)
+        const form = document.querySelector("#contact-form");
+        if (form) {
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                alert("Message sent! (Form submission handled by JS)");
+            });
+        }
+    </script>
 </body>
 </html>
